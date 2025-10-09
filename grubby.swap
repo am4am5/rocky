@@ -5,3 +5,4 @@ nano /etc/kernel/cmdline
 grubby --info=DEFAULT
 
 grubby --update-kernel=ALL --args="ro crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M rd.lvm.lv=rl_rockylinux95/root rhgb quiet $tuned_params"
+grubby --update-kernel=ALL --args="ro crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M rd.lvm.lv=rl/root"
